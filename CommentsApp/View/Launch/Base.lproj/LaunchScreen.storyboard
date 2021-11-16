@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1ub-za-v5D">
+                                <rect key="frame" x="-93" y="415.5" width="557" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1a-R4-Ifr">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Uxa-I2-Jhg"/>
+                                            <constraint firstAttribute="height" constant="75" id="jb9-mV-fcp"/>
+                                        </constraints>
+                                        <color key="tintColor" name="homeCommentBackground"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Like"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-gg-bmF">
+                                        <rect key="frame" x="216" y="0.0" width="150" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Gzr-Hv-TIH"/>
+                                            <constraint firstAttribute="height" constant="75" id="r2a-lo-O41"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Comment">
+                                            <color key="baseBackgroundColor" name="homeCommentBackground"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5e-v3-duZ">
+                                        <rect key="frame" x="382" y="0.0" width="175" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="5oC-Fs-dcu"/>
+                                            <constraint firstAttribute="height" constant="75" id="bpB-Mx-sUA"/>
+                                        </constraints>
+                                        <color key="tintColor" name="homeCommentBackground"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Share"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="homeBackground"/>
+                        <constraints>
+                            <constraint firstItem="1ub-za-v5D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N7M-eN-Fin"/>
+                            <constraint firstItem="1ub-za-v5D" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1.5" id="jj5-Ld-mcr"/>
+                            <constraint firstItem="1ub-za-v5D" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wBZ-by-Pan"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="homeBackground">
+            <color red="0.34152385592460632" green="0.35979503393173218" blue="0.35702285170555115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="homeCommentBackground">
+            <color red="0.30134829878807068" green="0.51757419109344482" blue="0.71902036666870117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
